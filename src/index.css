@@ -1,0 +1,72 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --canvas: #f4f6fa;
+  --surface: #ffffff;
+  --raised: #f8fafc;
+  --line: #e5e8ef;
+  --ink: #101828;
+  --muted: #667085;
+  --brand-soft: #fff0f2;
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px -16px rgba(16, 24, 40, 0.14);
+  --shadow-pop: 0 12px 32px -8px rgba(16, 24, 40, 0.18);
+  --grid-line: #eef1f6;
+}
+.dark {
+  --canvas: #0a0d13;
+  --surface: #11151d;
+  --raised: #171c26;
+  --line: #475467;
+  --ink: #e9edf5;
+  --muted: #8d9aae;
+  --brand-soft: #2a1119;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 24px -16px rgba(0, 0, 0, 0.7);
+  --shadow-pop: 0 12px 32px -8px rgba(0, 0, 0, 0.7);
+  --grid-line: #1f2633;
+}
+/* Auth surfaces stay light regardless of the workspace theme */
+.force-light {
+  --canvas: #f4f6fa;
+  --surface: #ffffff;
+  --raised: #f8fafc;
+  --line: #e5e8ef;
+  --ink: #101828;
+  --muted: #667085;
+  --brand-soft: #fff0f2;
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px -16px rgba(16, 24, 40, 0.14);
+  --shadow-pop: 0 12px 32px -8px rgba(16, 24, 40, 0.18);
+  --grid-line: #eef1f6;
+}
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  background-color: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+*:focus-visible {
+  outline: 2px solid #f63049;
+  outline-offset: 2px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}

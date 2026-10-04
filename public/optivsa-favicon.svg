@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Optivsa</title>
+  <rect width="48" height="48" rx="10" fill="#f63049"/>
+  <path d="M9 35V20M19 35V13M29 35V24M39 35V9" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>
